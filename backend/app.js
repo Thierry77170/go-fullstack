@@ -3,7 +3,7 @@ const mongoose = require('mongoose');
 const Thing = require('./models/Thing');
 const app = express();
 
-mongoose.connect('mongodb+srv://thierry77:elanion07@cluster0.eran4.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0')
+mongoose.connect('mongodb+srv://thierry77:elanion07@cluster0.eran4.mongodb.net/test?retryWrites=true&w=majority&appName=Cluster0')
   .then(() => console.log('Connexion à MongoDB réussie !'))
   .catch(() => console.log('Connexion à MongoDB échouée !'));
 
